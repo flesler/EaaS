@@ -10,13 +10,14 @@
 	</head>
 	<body>
 		<h1>Test EaaS</h1>
-		<form action="/form?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJFYWFTIiwic3ViIjoiYWZsZXNsZXJAZ21haWwuY29tIn0.y0fJiHTsuInfc2mcLngOrGsQ34AWZuJaxsKZtoBuP7M" method="POST">
+		<form action="/form?redir=http%3A%2F%2Fgoogle.com&amp;token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJFYWFTIiwic3ViIjoiYWZsZXNsZXJAZ21haWwuY29tIn0.y0fJiHTsuInfc2mcLngOrGsQ34AWZuJaxsKZtoBuP7M" method="POST">
 			<!-- This one and the action's token must be updated based on receiver -->
-			<input type="hidden" name="to" value="aflesler@gmail.com" />
+			<input type="hidden" name="to" value="your-email@here.com" />
 
-			<label>Name: <input type="text" name="name" value="Ari" /></label>
-			<label>Email: <input type="email" name="from" value="test@eaas.com" /></label>
-			<label>Subject: <input type="text" name="subject" value="test" /></label>
+			<label>Name: <input type="text" name="name" /></label>
+			<label>Email: <input type="email" name="from" /></label>
+			<label>Extra: <input type="text" name="extra" /></label>
+			<label>Subject: <input type="text" name="subject" /></label>
 			<label>Message: <textarea name="message"></textarea></label>
 			<input type="submit" />
 		</form>
