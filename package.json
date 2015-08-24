@@ -1,0 +1,19 @@
+{
+  "name": "eaas",
+  "author": "Ariel Flesler <aflesler@gmail.com>",
+  "version": "1.0.0",
+  "description": "Email-as-a-Service",
+  "private": true,
+  "scripts": {
+    "start": "node server"
+  },
+  "main": "./server.js",
+  "dependencies": {
+    "body": "^5.1.0",
+    "jsonwebtoken": "^5.0.5",
+    "sendgrid": "1.9.x"
+  },
+  "engines": {
+    "node": "0.12.x"
+  }
+}

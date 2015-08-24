@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>Test EaaS</title>
+		<style type="text/css">
+		label {
+			display:block;
+			margin-bottom: 10px;
+		}
+		</style>
+	</head>
+	<body>
+		<h1>Test EaaS</h1>
+		<form action="/form?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJFYWFTIiwic3ViIjoiYWZsZXNsZXJAZ21haWwuY29tIn0.y0fJiHTsuInfc2mcLngOrGsQ34AWZuJaxsKZtoBuP7M" method="POST">
+			<!-- This one and the action's token must be updated based on receiver -->
+			<input type="hidden" name="to" value="aflesler@gmail.com" />
+
+			<label>Name: <input type="text" name="name" value="Ari" /></label>
+			<label>Email: <input type="email" name="from" value="test@eaas.com" /></label>
+			<label>Subject: <input type="text" name="subject" value="test" /></label>
+			<label>Message: <textarea name="message"></textarea></label>
+			<input type="submit" />
+		</form>
+	</body>
+</html>
