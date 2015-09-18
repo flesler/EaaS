@@ -11,6 +11,7 @@
   "dependencies": {
     "body": "^5.1.0",
     "jsonwebtoken": "^5.0.5",
+    "mongodb": "^2.0.43",
     "sendgrid": "^1.9.2"
   },
   "engines": {

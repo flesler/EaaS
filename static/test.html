@@ -10,9 +10,10 @@
 	</head>
 	<body>
 		<h1>Test EaaS</h1>
-		<form action="/form?redir=http%3A%2F%2Fgoogle.com&amp;token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJFYWFTIiwic3ViIjoiYWZsZXNsZXJAZ21haWwuY29tIn0.y0fJiHTsuInfc2mcLngOrGsQ34AWZuJaxsKZtoBuP7M" method="POST">
-			<!-- This one and the action's token must be updated based on receiver -->
+		<form action="/form?redir=http%3A%2F%2Fgoogle.com" method="POST">
+			<!-- These two must be updated based on receiver -->
 			<input type="hidden" name="to" value="your-email@here.com" />
+			<input type="hidden" name="token" value="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJFYWFTIiwic3ViIjoieW91ci1lbWFpbEBoZXJlLmNvbSJ9.DdWWyVuitVJpsk7Kct6nVz7pvhn8XYfjWveBagJuEDQ" />
 
 			<label>Name: <input type="text" name="name" /></label>
 			<label>Email: <input type="email" name="from" /></label>
