@@ -16,6 +16,6 @@
     "nodemailer-sendgrid-transport": "^0.2.0"
   },
   "engines": {
-    "node": "0.12.x"
+    "node": "6.x"
   }
 }
